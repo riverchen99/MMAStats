@@ -20,8 +20,7 @@ function getEventStats() {
 }
 
 function processEventPage(callback) {
-	//request(eventLinks[eventCount], function (error, response, body) {
-	request("http://www.sherdog.com/events/UFC-159-Jones-vs-Sonnen-25825", function (error, response, body) {
+	request(eventLinks[eventCount], function (error, response, body) {
 		if (!error && response.statusCode !== 200) {
 			console.log("error!");
 			callback();
@@ -82,7 +81,6 @@ function processEventPage(callback) {
 			console.log(error);
 			console.log("error: " + eventLinks[eventCount]);
 		}
-		console.log(fights);
 		eventCount++;
 		callback();
 	});
