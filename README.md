@@ -1,2 +1,2 @@
 # MMAStats
-Mixed martial arts data visualization.
+Mixed martial arts bout data scraper from sherdog.
